@@ -331,7 +331,7 @@ a {
 /*Media querys de prueba*/
 
 /*Media querys para la seccion de perfil de los artistas*/
-@media only screen and (max-width: 320px) and (min-width: 568px) {
+@media only screen and (max-width: 320px) and (min-width: 320px) {
 	.container-artistas {
 		position: relative;
 		left: 35px;
@@ -368,7 +368,7 @@ a {
 /**************************************************************************************/
 
 /*Media querys para la seccion del menu cabecera*/
-@media only screen and (max-width: 320px) and (min-width: 568px) {
+@media only screen and (max-width: 320px) and (min-width: 320px) {
 	#menunav {
 		position: relative;
 		right: 80px;
@@ -405,7 +405,7 @@ a {
 
 
 /*Media querys para el brand del menu*/
-@media only screen and (max-width: 320px) and (min-width: 568px) {
+@media only screen and (max-width: 320px) and (min-width: 320px) {
 	#brandlogo {
 		position: relative;
 		left: 25px;
@@ -441,7 +441,7 @@ a {
 
 
 /*Media querys para el logo de redes sociales en el footer*/
-@media only screen and (max-width: 320px) and (min-width: 568px) {
+@media only screen and (max-width: 320px) and (min-width: 320px) {
 	#logomedia {
 		position: relative;
 		right: 25px;
@@ -467,7 +467,15 @@ a {
 @media only screen and (max-width: 834px) and (min-width: 768px) {
 	#logomedia {
 		position: relative;
-		left: 35px;			
+		left: 50px;			
+	}
+}
+
+@media only screen and (max-width: 1639px) and (min-width: 892px) {
+	#logomedia {
+		position: relative;
+		left: 60px;
+
 	}
 }
 
@@ -480,8 +488,8 @@ a {
 /**************************************************************************************/
 
 
-/*Media querys para el logos redes sociales*/
-@media only screen and (max-width: 320px) and (min-width: 568px) {
+/*Media querys para los diferentes tipos de logos redes sociales*/
+@media only screen and (max-width: 320px) and (min-width: 320px) {
 	#pnglogo {
 		position: relative;
 		left: 100px;
@@ -504,18 +512,21 @@ a {
 	}
 }
 
+
 @media only screen and (max-width: 1440px) and (min-width: 892px) {
 	#pnglogo {
 		position: relative;
-		right: 50px;
+		left: 5px;
 
 	}
 }
 
-@media only screen and (max-width: 2560px) and (min-width: 1486px) {
+
+
+@media only screen and (max-width: 1639px) and (min-width: 892px) {
 	#pnglogo {
 		position: relative;
-		right: 425px;
+		right: 60px;	
 
 	}
 }
@@ -537,17 +548,39 @@ a {
 	}
 }
 
+@media only screen and (max-width: 1150px) and (min-width: 892px) { /*FALTA REVISAR BIEN ESTE MEDIA QUERY QUE DEPENDE DEL LOGO DEL BRAND EN EL FOOTER*/
+	#pnglogo {
+		overflow: hidden;
+		position: fixed;
+
+	}
+}
+
+@media only screen and (max-width: 1050px) and (min-width: 800px) { /*FALTA REVISAR BIEN ESTE MEDIA QUERY QUE DEPENDE DEL LOGO DEL BRAND EN EL FOOTER*/
+	#pnglogo {
+		visibility: hidden;
+		background-color: white;
+
+	}
+}
+
+@media only screen and (max-width: 1280px) and (min-width: 800px) {
+	#pnglogo {
+		position: relative;
+		left: 55px; 
+	}
+}
 /* fin Media querys para logos redes sociales/
 
 
-/**************************************************************************************/
+/****************************************************************************1280 x 800**********/
 /**************************************************************************************/
 /**************************************************************************************/
 /**************************************************************************************/
 
 
 /*Media querys para el logo del brand del sitio en el footer*/
-@media only screen and (max-width: 320px) and (min-width: 568px) {
+@media only screen and (max-width: 320px) and (min-width: 320px) {
 	#logostreet {
 		position: relative;
 		right: 6em;
@@ -576,6 +609,16 @@ a {
 		bottom: 30px;
 	}
 }
+
+@media only screen and (max-width: 1280px) and (min-width: 800px) {
+	#logostreet {
+		position: relative;
+		right: 20px;
+		bottom: 20px; 
+	}
+}
+
+
 
 /* fin Media querys para el logo del brand del sitio en el footer*/
 
