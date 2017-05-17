@@ -1,0 +1,586 @@
+* {
+	margin: 0;
+	padding: 0;
+	/*border: 1px solid white and black;*/
+}
+
+body {
+	/*background: radial-gradient(circle, black, blue);*/
+}
+
+/* Inicio estilos boton go top JS */
+.go-top {
+  position: fixed;
+  bottom: 2em;
+  right: 1em;
+  text-decoration: none;
+  color: #fff;
+  background-color: rgba(0, 0, 0, 0.3);
+  font-size: 10px;
+  padding: 1em;
+  display: none;
+}
+ 
+.go-top:hover {
+  background-color: rgba(0, 0, 0, 0.6);
+}
+/* Fin estilos boton go top js*/
+
+
+/********************************/
+/* Inicio estilos carrusel      */
+/********************************/
+.fade-carousel {
+    position: relative;
+    height: 100vh;
+}
+.fade-carousel .carousel-inner .item {
+    height: 100vh;
+}
+.fade-carousel .carousel-indicators > li {
+    margin: 0 2px;
+    background-color: black;
+    border-color: white;
+    /*background-color: #f39c12;
+    border-color: #f39c12;*/
+    opacity: .7;
+}
+.fade-carousel .carousel-indicators > li.active {
+  width: 10px;
+  height: 10px;
+  opacity: 1;
+  position: relative;
+  bottom: 20px;
+}
+
+
+/*          texto central        */
+.hero .titulo {
+	color: rgba(255, 178, 0, 1);
+	text-shadow: 3px 3px rgba(0,0,0,.75);
+}
+
+.hero .titulo .pin{
+	color: #fff;
+	text-shadow: 3px 3px rgba(0,0,0,.75);
+}
+
+.hero {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 3;
+    color: #fff;
+    text-align: center;
+    text-transform: uppercase;
+    text-shadow: 7px 7px rgba(0,0,0,.75);
+      -webkit-transform: translate3d(-50%,-50%,0);
+         -moz-transform: translate3d(-50%,-50%,0);
+          -ms-transform: translate3d(-50%,-50%,0);
+           -o-transform: translate3d(-50%,-50%,0);
+              transform: translate3d(-50%,-50%,0);
+}
+.hero h1 {
+    font-size: 6em;    
+    font-weight: bold;
+    margin: 0;
+    padding: 0;
+}
+
+.fade-carousel .carousel-inner .item .hero {
+    opacity: 0;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s; 
+}
+.fade-carousel .carousel-inner .item.active .hero {
+    opacity: 1;
+    -webkit-transition: 2s all ease-in-out .1s;
+       -moz-transition: 2s all ease-in-out .1s; 
+        -ms-transition: 2s all ease-in-out .1s; 
+         -o-transition: 2s all ease-in-out .1s; 
+            transition: 2s all ease-in-out .1s;    
+}
+
+
+/*            Overlay           */
+
+.overlay {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+    background-color: #080d15;
+    opacity: .2;
+}
+
+
+/*       Slides de fondo     */
+
+.fade-carousel .slides .slide-1, 
+.fade-carousel .slides .slide-2,
+.fade-carousel .slides .slide-3 {
+  height: 100vh;
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.fade-carousel .slides .slide-1 {
+  /*background-image: url(https://ununsplash.imgix.net/photo-1416339134316-0e91dc9ded92?q=75&fm=jpg&s=883a422e10fc4149893984019f63c818); */
+  background-image: url(https://upload.wikimedia.org/wikipedia/commons/3/36/%22Bellas_Artes_metro_station%22_Stgo-Chile_-_Street_Art_by_INTI_-_Flickr_-_m.sanhuezacelsi.jpg);
+}
+.fade-carousel .slides .slide-2 {
+  background-image: url(http://www.choosingfigs.com/photography/albums/rtw-valparaiso-chile/rtw-valparaiso-chile-203.jpg);
+}
+.fade-carousel .slides .slide-3 {
+  background-image: url(https://globalistchile.files.wordpress.com/2012/05/dsc_0177.jpg);
+}
+
+/********************************/
+/*   Fin estilos carrusel       */
+/********************************/
+
+/**/
+
+/**/
+
+
+/********************************/
+/*          Media Queries       */
+/********************************/
+@media screen and (min-width: 980px){
+    .hero { width: 980px; }    
+}
+@media screen and (max-width: 640px){
+    .hero h1 { font-size: 4em; }    
+}
+
+
+/* ESTILOS CSS IMAGENES SECCION GALERTIA */
+#myImg {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#myImg:hover {opacity: 0.7;}
+
+#imagen1 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#imagen1:hover {opacity: 0.7;}
+
+#imagen3 {
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+#imagen3:hover {opacity: 0.7;}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.9); /* Black w/ opacity */
+}
+
+/* Modal Content (image) */
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+}
+
+/* Caption of Modal Image */
+#caption {
+    margin: auto;
+    display: block;
+    width: 80%;
+    max-width: 700px;
+    text-align: center;
+    color: #ccc;
+    padding: 10px 0;
+    height: 150px;
+}
+
+/* Add Animation */
+.modal-content, #caption {    
+    -webkit-animation-name: zoom;
+    -webkit-animation-duration: 0.6s;
+    animation-name: zoom;
+    animation-duration: 0.6s;
+}
+
+@-webkit-keyframes zoom {
+    from {-webkit-transform:scale(0)} 
+    to {-webkit-transform:scale(1)}
+}
+
+@keyframes zoom {
+    from {transform:scale(0)} 
+    to {transform:scale(1)}
+}
+
+/* The Close Button */
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: white;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+}
+
+.close:hover,
+.close:focus {
+    color: rgba(255, 178, 0, 1);
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* 100% Image Width on Smaller Screens */
+@media only screen and (max-width: 700px){
+    .modal-content {
+        width: 100%;
+    }
+}
+
+/*Fin estilos imagen seccion galeria*/
+
+/*ESTILOS DE BOTONES MENU CABECERA*/
+a {
+	color: black;
+}
+
+.button {
+  border-radius: 4px;
+  background-color: black;
+  border: none;
+  color: white;
+  text-align: center;
+  font-size: 18px;
+  padding: 0px;
+  width: 120px;
+  height: 1;
+  transition: all 0.5s;
+  cursor: pointer;
+  margin: 2px;
+
+}
+
+.button span {
+  cursor: pointer;
+  display: inline;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 10px;
+  color: white;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+/* FIN ESTILOS BOTONES MENU CABECERA */
+
+/* Inicio Estilos font awesome del footer*/
+.socialmedia {
+	border: 1px ridge white;
+	float: right;
+	padding: 2px;
+	margin: 5em 110px 0px -95px;
+	border-radius: 50%;
+}
+
+.socialmedia:hover {
+	opacity: 0.7;
+}
+/*FIN Estilos font awesome del footer*/
+
+
+
+
+/*Media querys de prueba*/
+
+/*Media querys para la seccion de perfil de los artistas*/
+@media only screen and (max-width: 320px) and (min-width: 320px) {
+	.container-artistas {
+		position: relative;
+		left: 35px;
+	}
+}
+
+@media only screen and (max-width: 991px) and (min-width: 835px) {
+	.container-artistas {
+		width: 100%;
+		margin: 0px  20px 0px 250px;
+	}
+}
+
+/*Media querys para la seccion de perfil de los artistas en menor tamaño iphone*/
+@media only screen and (max-width: 834px) and (min-width: 375px) {
+	.container-artistas {
+		width: 100%;
+		margin: 0px  20px 0px 60px;
+	}
+}
+
+/*Media querys para la seccion de perfil de los artistas en menor tamaño 770*/
+@media only screen and (max-width: 834px) and (min-width: 768px) {
+	.container-artistas {
+		width: 100%;
+		margin: 0px  20px 0px 220px;
+	}
+}
+/*Fin prueba de media querys seccion artistas*/
+
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+
+/*Media querys para la seccion del menu cabecera*/
+@media only screen and (max-width: 320px) and (min-width: 320px) {
+	#menunav {
+		position: relative;
+		right: 80px;
+	}
+}
+
+@media only screen and (max-width: 991px) and (min-width: 835px) {
+	#menunav {
+		background-color: ;
+	}
+}
+
+@media only screen and (max-width: 834px) and (min-width: 375px) {
+	#menunav {
+		width: 75%;
+		position: relative;
+		top: 20px;
+	}
+}
+
+@media only screen and (max-width: 834px) and (min-width: 768px) {
+	#menunav {
+		width: 85%;
+	}
+}
+
+/* fin Media querys para la seccion del menu cabecera*/
+
+
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+
+
+/*Media querys para el brand del menu*/
+@media only screen and (max-width: 320px) and (min-width: 320px) {
+	#brandlogo {
+		position: relative;
+		left: 25px;
+	}
+}
+
+@media only screen and (max-width: 991px) and (min-width: 835px) {
+	#brandlogo {
+		background-color: ;
+	}
+}
+
+@media only screen and (max-width: 834px) and (min-width: 375px) {
+	#brandlogo {
+		position: relative;
+		left: 55px;
+	}
+}
+
+@media only screen and (max-width: 834px) and (min-width: 768px) {
+	#brandlogo {
+		left: 100%;
+
+	}
+}
+
+/* fin Media querys para el brand del menu*/
+
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+
+
+/*Media querys para el logo de redes sociales en el footer*/
+@media only screen and (max-width: 320px) and (min-width: 320px) {
+	#logomedia {
+		position: relative;
+		right: 25px;
+		top: 25px;
+	}
+}
+
+@media only screen and (max-width: 991px) and (min-width: 835px) {
+	#logomedia {
+		position: relative;
+		left: 65px;
+	}
+}
+
+@media only screen and (max-width: 834px) and (min-width: 375px) {
+	#logomedia {
+		position: relative;
+		left: 10px;
+		top: 25px;
+	}
+}
+
+@media only screen and (max-width: 834px) and (min-width: 768px) {
+	#logomedia {
+		position: relative;
+		left: 35px;			
+	}
+}
+
+/* fin Media querys para el logo de redes sociales en el footer*/
+
+
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+
+
+/*Media querys para el logos redes sociales*/
+@media only screen and (max-width: 320px) and (min-width: 320px) {
+	#pnglogo {
+		position: relative;
+		left: 100px;
+		bottom: 20px;
+	}
+}
+
+@media only screen and (max-width: 1080px) and (min-width: 720px) {
+	#pnglogo {
+		position: relative;
+		left: 65px;
+
+	}
+}
+
+@media only screen and (max-width: 1024px) and (min-width: 893px) {
+	#pnglogo {
+		position: relative;
+		left: 85px;
+	}
+}
+
+@media only screen and (max-width: 1440px) and (min-width: 892px) {
+	#pnglogo {
+		position: relative;
+		right: 50px;
+
+	}
+}
+
+@media only screen and (max-width: 2560px) and (min-width: 1486px) {
+	#pnglogo {
+		position: relative;
+		right: 425px;
+
+	}
+}
+
+
+
+@media only screen and (max-width: 834px) and (min-width: 375px) {
+	#pnglogo {
+		position: relative;
+		left: 80px;
+		bottom: 25px;
+	}
+}
+
+@media only screen and (max-width: 991px) and (min-width: 835px) {
+	#pnglogo {
+		position: relative;
+		right: 20px;
+	}
+}
+
+/* fin Media querys para logos redes sociales/
+
+
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+
+
+/*Media querys para el logo del brand del sitio en el footer*/
+@media only screen and (max-width: 320px) and (min-width: 320px) {
+	#logostreet {
+		position: relative;
+		right: 6em;
+	}
+}
+
+@media only screen and (max-width: 991px) and (min-width: 835px) {
+	#logostreet {
+		position: relative;
+		right: 70px;
+		bottom: 30px;
+	}
+}
+
+@media only screen and (max-width: 834px) and (min-width: 375px) {
+	#logostreet {
+		position: relative;
+		right: 50px;
+	}
+}
+
+@media only screen and (max-width: 834px) and (min-width: 768px) {
+	#logostreet {
+		position: relative;
+		right: 70px;
+		bottom: 30px;
+	}
+}
+
+/* fin Media querys para el logo del brand del sitio en el footer*/
+
+
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
+/**************************************************************************************/
