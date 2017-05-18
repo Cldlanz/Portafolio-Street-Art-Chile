@@ -313,7 +313,7 @@ a {
 
 /* Inicio Estilos font awesome del footer*/
 .socialmedia {
-	border: 1px ridge white;
+	border: 2px solid white;
 	float: right;
 	padding: 2px;
 	margin: 5em 110px 0px -95px;
