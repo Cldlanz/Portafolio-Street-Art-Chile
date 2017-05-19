@@ -318,10 +318,14 @@ a {
 	padding: 2px;
 	margin: 5em 110px 0px -95px;
 	border-radius: 50%;
+	top: 0px;
+	position: relative;
+	transition: top ease 0.5s;
 }
 
 .socialmedia:hover {
-	opacity: 0.7;
+	opacity: 0.8;
+	top: -10px;
 }
 /*FIN Estilos font awesome del footer*/
 
@@ -661,3 +665,35 @@ a {
 /**************************************************************************************/
 /**************************************************************************************/
 /**************************************************************************************/
+
+/* Estilos de transicion para los redes sociales de la seccion copyright */
+.cademyimg {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+.cademyimg:hover {
+  top: -5px;
+  color: black;
+}
+
+.fa-github-square {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+.fa-github-square:hover {
+  top: -5px;
+  color: black;
+}
+
+.fa-linkedin-square {
+  position: relative;
+  top: 0;
+  transition: top ease 0.5s;
+}
+.fa-linkedin-square:hover {
+  top: -5px;
+  color: black;
+}
+/* fin Estilos de transicion para los redes sociales de la seccion copyright */
